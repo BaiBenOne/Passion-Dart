@@ -75,3 +75,17 @@ input[type="checkbox"] {
 .button:active {
     transform: scale(0.98);
 }
+/* ////////// RESPONSIVE ////////// */
+
+/* ////////// MOBILE ////////// */
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+input,textarea{
+    width: 12rem;
+
+}
+.contact{
+padding: 20px 8px;
+}
+}

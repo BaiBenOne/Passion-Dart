@@ -116,8 +116,9 @@ ul{
 .banner{
     padding: 0px 0px;
 }
-.rules-master{
-    
-}
+.modal-toggle {
+  min-width: 240px;
+  min-height: 240px;
 
+}
 }

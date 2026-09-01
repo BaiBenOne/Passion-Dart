@@ -197,6 +197,9 @@ details p {
     .accordion{
         margin: 16px;
     }
+    ul{
+        padding: 8px;
+    }
     }
 
 
