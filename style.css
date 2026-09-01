@@ -319,6 +319,7 @@ footer nav{
     z-index: 12;
     position: relative;
 }
+
 .modal .content {
     display: flex;
     flex-direction: column;
@@ -334,6 +335,11 @@ footer nav{
 }
 .modal .content a{
     color: var(--color-secondary);
+    font-weight: 800;
+}
+.modal .content .mirror a{
+    color: var(--color-accent);
+    font-weight: 800;
 }
 .modal .content img{
     display: block;
