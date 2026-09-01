@@ -321,7 +321,9 @@ footer nav{
 }
 .modal .content {
     display: flex;
+    flex-direction: column;
     text-align: center;
+    max-width: fit-content;
     padding: 40px 8px;
     line-height: 28px;
     font-size: larger;
