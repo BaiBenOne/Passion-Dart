@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* IMAGE MODALE*/
+.d-101 {
+    background-image: url("./images/101-901.png");
+    border-radius: 10px;
+}
+
+.cricket {
+    background-image: url("./images/Cricket.png");
+    border-radius: 10px;
+}
+
+.arround-clock {
+    background-image: url("./images/around-the-clock.png");
+    border-radius: 10px;
+}
+
+.count-up {
+    background-image: url("./images/count-up.png");
+    border-radius: 10px;
+}
+
+.vies {
+    background-image: url("./images/5-vies.png");
+    border-radius: 10px;
+}
+
+.shanghai
+ {
+    background-image: url("./images/shanghai.png");
+    border-radius: 10px;
+}
+
+/*-----------------------------------------------*/
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    gap: 32px;
+}
+.section{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.rules{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+.rules h2{
+    text-align:center;
+    color:var(--color-text);
+}
+.intro{
+    width:75%;
+    text-align:center;
+    line-height:28px;
+    font-size: 1.2rem;
+}
+.rules-master{
+    display:flex;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:24px;
+    margin-bottom: 20px;
+}
+.rule-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 220px;
+    background-color: aliceblue;
+    border-left:8px solid var(--color-accent);
+    border-radius:10px;
+    padding:24px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:transform 0.2s;
+    gap:32px
+}
+.rule-card:hover{
+    transform:translateY(-5px);
+}
+.rule-card h3{
+    margin-bottom: 16px;
+    color:var(--color-text);
+    text-align: center;
+}
+.rule-card p{
+    line-height:28px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+.section{ 
+    flex-flow: column nowrap;
+    padding: 0px 0px;
+}
+.banner{
+    padding: 0px 0px;
+}
+.rules-master{
+    
+}
+
+}

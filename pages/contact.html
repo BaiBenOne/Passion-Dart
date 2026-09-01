@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../contact.css"/>
+    <title>CONTACT</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" aria-label="Retour à l'accueil"><img src="../images/passion-dart-logo.svg" width="100" height="100"></a>
+        <nav class="pc-nav" aria-label="Navigation principale">
+            <a class="nav" href="../index.html">ACCUEIL</a>
+            <a class="nav" href="./regles.html">RÈGLES</a>
+            <a class="nav" href="dart_finish.html">DART FINISH</a>
+            <a class="nav" href="./contact.html">CONTACT</a>
+        </nav>
+        <div class="menu-burger">
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-button"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="Ouvrir le menu"/></label>
+            <nav class="side-menu" aria-label="Navigation mobile">
+                <ul>
+                    <li><a class="nav" href="../index.html">ACCUEIL</a></li>
+                    <li><a class="nav" href="./regles.html">RÈGLES</a></li>
+                    <li><a class="nav" href="dart_finish.html">DART FINISH</a></li>
+                    <li><a class="nav" href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="title">Contact</h1>
+        <div class="contact">
+            <p> Une question, une suggestion ou une remarque ?<p>
+            <p> N'hésitez pas à me contacter.</p>
+            <p>⚠️ Cette fonctionnalité n'est pas encore disponible, ceci est un faux formulaire ! ⚠️</p>
+        </div>
+        <div class="form flex-center article-column">
+            <input type="checkbox" id="sent-toggle">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemple@fakemail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" placeholder="Écrivez votre message..." required></textarea>
+            </div>
+            <label for="sent-toggle" class="button">envoyer</label>
+            <div id="success">
+                <div class="success-content">
+                    <h3>Merci pour votre message !</h3>
+                    <p>Vous venez de tester une fonctionnalité encore en développement. Pour le moment, le formulaire ne transmet pas les messages.</p>
+                    <p>Il sera bientôt disponible. Merci de votre patience et à très bientôt sur le site !</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="slider">
+            <div class="slider-text" aria-hidden="true">
+                <p>//Ceci sera prochainement votre NEWSLETTER // Restez connectés // Je compte sur vous //Ceci sera prochainement votre NEWSLETTER // Restez connectés // Je compte sur vous //</p>
+            </div>
+        </section>
+        <p>&copy; 2026 Passion Darts - Tous droits réservés.</p>
+        <section class="footer-content flex">
+            <a class="modal-link" href="#sources" aria-label="Afficher les sources des images">Sources</a>
+            <div id="sources" class="overlay">
+                <div class="modal">
+                    <h2>Sources</h2>
+                    <a class="close" href="#" aria-label="Fermer la fenêtre">&times;</a>
+                    <div class="content">
+                        <p>Voici toutes les sources pour images & logos</p>
+                        <article class="banner flex alt mirror">
+                            <p>logo de base par <a href="https://www.canva.com/p/tomaby/" target="_blank" rel="noopener noreferrer">Tomaby</a> sur <a href="https://www.canva.com/fr_fr/modeles/EAHNlVyahaQ-logo-flechettes-club-moderne-noir-et-rouge/" target="_blank" rel="noopener noreferrer">Canva</a></p>
+                            <img src="../images/passion-dart-logo.svg" alt="Logo Passion Dart">
+                        </article>
+                        <article class="banner flex">
+                            <p>Logo de facebook <a href="https://icones8.fr/icon/118497/facebook" target="_blank" rel="noopener noreferrer">icones8</a></p>
+                            <p>Logo instagram sur <a href="https://icones8.fr/icon/Xy10Jcu1L2Su/instagram" target="_blank" rel="noopener noreferrer">icones8</a></p>
+                            <p>Logo de X <a href="https://icones8.fr/icon/phOKFKYpe00C/twitterx" target="_blank" rel="noopener noreferrer">icones8</a></p>
+                            <img src="../images/icons8-facebook-nouveau-48.png" alt="Logo de facebook">
+                            <img src="../images/icons8-instagram-48.png" alt="Logo de instagram">
+                            <img src="../images/icons8-twitterx-48.png" alt="Logo de X">               
+                    </div>
+                </div>
+            </div>
+                <nav aria-label="Réseaux sociaux">
+                    <a  href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../images/icons8-facebook-nouveau-48.png" alt="Facebook"/></a>
+                    <a  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../images/icons8-instagram-48.png" alt="Instagram"/></a>
+                    <a  href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="../images/icons8-twitterx-48.png" alt="X"/></a>
+                </nav>
+        </section>
+    </footer>
+</body>
+</html>
