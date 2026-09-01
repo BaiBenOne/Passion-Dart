@@ -13,7 +13,8 @@ h1{
     align-items: center;
     justify-content: space-between;
     background-image: url(./images/ChatGPT\ Image\ 8\ juil.\ 2026\,\ 16_50_49.png);
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 32px 0px;
     color: var(--color-text-alt);
     margin-bottom: 32px;
