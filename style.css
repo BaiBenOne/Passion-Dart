@@ -422,6 +422,12 @@ footer nav{
 /* ////////// TABLETTE ////////// */
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+        .pc-nav{
+        display: none;
+    }
+    .menu-burger{
+    display: block;
+  }
 
 }
 

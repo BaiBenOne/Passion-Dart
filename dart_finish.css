@@ -54,9 +54,7 @@ td:hover{
     color: var(--color-text-alt);
     font-weight: bold;
 }
-#pc-hidden{
-    display: none;
-}
+
 
 /* ////////// RESPONSIVE ////////// */
 
@@ -68,7 +66,70 @@ td:hover{
         display: none;
     }
     .table-master{
+        display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    }
+
+
+    #pc-hidden{
+        display: inline-block;
+    }
 
 }
+/* ////////// TABLETTE ////////// */
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+        #mobile-hidden{
+        display: none;
+    }
+    .table-master{
+    flex-direction: column;
+    }
+
+    #pc-hidden{
+        display: inline-block;
+    }
+
+}
+
+
+/* ////////// PC ////////// */
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #pc-hidden{ 
+        display: none;
+    }
+
+    
+    .table-master{
+        flex-direction: row;
+    }
+    .table-finish{
+        align-self: first baseline;
+        
+    }
+}
+    
+
+
+
+/* ////////// PC-L ////////// */
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #pc-hidden{ 
+        display: none;
+    }
+}
+
+/* ////////// 4k ////////// */
+
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    #pc-hidden{ 
+        display: none;
+    }
 }
