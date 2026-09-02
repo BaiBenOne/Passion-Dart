@@ -1,20 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .contact {
     max-width: 700px;
     margin: 0 auto;
     padding: 32px;
-}
-.contact p{
     text-align: center;
     font-weight: 500;
     line-height: 32px;
-}
-.form{
-    display: flex;
 }
 .form-group {
     display: flex;
@@ -43,18 +33,19 @@ input[type="checkbox"] {
   color: var(--color-text);
 }
 .success-content{
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: var(--color-accent);
     margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: var(--color-text-alt);
 }
-.success-content p{
-    font-size: 28px;
-}
-#success h3{
-    color: var(--color-accent);
-}
+
 #sent-toggle:checked ~ .form-group, #sent-toggle:checked ~ .button  {
   display: none;
 }
@@ -77,26 +68,28 @@ input[type="checkbox"] {
 }
 /* ////////// RESPONSIVE ////////// */
 
+
 /* ////////// MOBILE ////////// */
+
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
 
-input,textarea{
-    width: 18rem;
+    input,textarea{
+        width: 18rem;
+    }
+    .contact{
+        padding: 20px 8px;
+    }
+}
 
-}
-.contact{
-padding: 20px 8px;
-}
-}
+
 /* ////////// TABLETTE ////////// */
+
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
     input,textarea{
-    width: 25rem;
-
-}
-
+        width: 25rem;
+    }
 }
 
 
@@ -105,10 +98,8 @@ padding: 20px 8px;
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     input,textarea{
-    width: 30rem;
-
-}
-
+        width: 30rem;
+    }
 }
 
 
@@ -117,10 +108,8 @@ padding: 20px 8px;
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     input,textarea{
-    width: 40rem;
-
-}
-
+        width: 40rem;
+    }
 }
 
 /* ////////// 4k ////////// */
@@ -128,8 +117,6 @@ padding: 20px 8px;
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
     input,textarea{
-    width: 50rem;
-
-}
-
+        width: 50rem;
+    }
 }
