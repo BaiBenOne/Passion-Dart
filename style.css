@@ -156,6 +156,42 @@ h5{
 }
 .banner img{
     border-radius: 10px;
+
+}
+.image-container{
+    position: relative;
+    flex:1
+
+}
+.image-credit {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 4px;
+    opacity: 0.90;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-text-alt);
+    text-shadow: 2px 2px black;
+    text-align: none;
+}
+.image-credit a{
+    color: var(--color-accent);
+    font-weight: 900;
+    font-style:italic;
+
+}
+.credit-right{
+    position:static;
+    bottom: 0px;
+    right: 0px;
+    padding: 2px 4px;
+    width: 40%;
+    border-radius: 4px;
+    opacity: 0.90;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-text-alt);
+    text-shadow: 2px 2px black;
+    text-align: none;
 }
 .section{
     padding: 32px 0px;
@@ -217,6 +253,7 @@ main{
     justify-content: center;
     gap: 3rem;
     text-align: center;
+    flex:1;
 }
 
 .mirror{
@@ -403,9 +440,9 @@ footer nav{
         order:-2 ;
         font-size: 1.8rem;
     }
-    .banner img{ 
+    .image-container img{ 
         margin: 32px 0px;
-        width: 75%;
+        width: 100%;
         max-width: 100%;
     }
     .article-column{
@@ -436,18 +473,57 @@ footer nav{
         position: fixed;
 
     }
+    .image-container{
+    position: relative;
+
+}
+.image-credit {
+    bottom: 40px;
+}
+.image-credit a{
+    color: var(--color-accent);
+    font-weight: 900;
+    font-style:italic;
+
+}
+    .credit-right{
+        width: auto;
+        height: auto;
+    }
+.banner-credit{
+    
+    bottom: 20px;
+    border-radius: 4px;
+    opacity: 0.90;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-text-alt);
+    text-shadow: 2px 2px black;
+    text-align: none;
+    
+}
+
 }
 
 /* ////////// TABLETTE ////////// */
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-        .pc-nav{
-        display: none;
+    .pc-nav{
+    display: none;
     }
     .menu-burger{
     display: block;
-  }
+    }
+    .banner-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
+      .credit-right{
+        width: auto;
+        height: auto;
+
+}
 }
 
 
@@ -455,6 +531,10 @@ footer nav{
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .credit-right{
+        width: auto;
+        height: auto;
+    }
 
 }
 
@@ -463,7 +543,11 @@ footer nav{
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .credit-right{
+        width: auto;
+        height: auto;
 
+}
 }
 
 /* ////////// 4k ////////// */

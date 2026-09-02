@@ -38,7 +38,11 @@ h1{
     background-color: var(--color-surface);
 }
 .banner-image{
-    width:40%;
+    display: block;
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 blockquote{
     text-align: center;
