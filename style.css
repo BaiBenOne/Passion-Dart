@@ -72,13 +72,16 @@ article:hover{
     height: 100%;
     background-color: #2e7d32e3;
     transition: right 0.3s ease;
-    padding-top: 60px;
     z-index: 99;
     border: 2px solid var(--color-accent);
 }
+.blur-burger{
+    background-color: #2e7d3288; ;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
 .side-menu ul {
     list-style-type: none;
-    padding: 0;
 }
 .side-menu li {
     padding: 30px 0px;
@@ -105,7 +108,7 @@ article:hover{
     text-decoration: none;
     text-shadow: 0px 2px black;
     padding: 12px 28px;
-    margin: 0px 16px;
+    margin: 8px 16px;
     border: solid 2px var(--color-accent);
     border-radius: 10px;
     color: var(--color-text-alt);
@@ -118,18 +121,11 @@ article:hover{
 .button:active {
     transform: scale(0.9);
 }
-
 .blur{
     background: none;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
-.blur-burger{
-    background-color: #2e7d3288; ;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
  /*  ////////// TITLES ////////// */
 
 h1{
@@ -145,16 +141,6 @@ h2{
 }
 h3{
     font-size: 1.2em;
-    text-align: center;
-}
-h4{
-    font-size: 1.1em;
-    text-align: center;
-}
-h5{
-    font-size: 1.5rem;
-    color: var(--color-text-alt);
-    margin: 32px;
     text-align: center;
 }
 .title {
@@ -241,8 +227,7 @@ main{
     color: var(--color-text-alt);
 }
 .banner p{
-    font-size: 1.2rem;
-    padding: 12px;
+ padding: 8px;
 }
 .alt{
     background-color: var(--color-background-alt);
@@ -362,7 +347,6 @@ footer nav{
     position: relative;
 
 }
-
 .modal .content {
     display: flex;
     flex-direction: column;
@@ -391,7 +375,6 @@ footer nav{
 }
 .sources-images img{
     width: 35%;
-
 }
 
 /* ////////// MODAL-ELEMENTS ////////// */
@@ -425,6 +408,7 @@ footer nav{
   text-decoration: none;
   color: var(--color-text-alt);
 }
+
 /* ////////// RESPONSIVE ////////// */
 
 /* ////////// MOBILE ////////// */
@@ -496,14 +480,14 @@ footer nav{
         width: auto;
         height: auto;
     }
-    .banner-credit{      
-        bottom: 20px;
+    .banner-credit{ 
+        position: relative;     
+        bottom: -20px;
         border-radius: 4px;
         opacity: 0.90;
         background-color: rgba(0, 0, 0, 0.5);
         color: var(--color-text-alt);
         text-shadow: 2px 2px black;
-        text-align: none;
     }
 
 }
@@ -525,6 +509,15 @@ footer nav{
       .credit-right{
         width: auto;
         height: auto;
+    }
+        .banner-credit{ 
+        position: relative;     
+        bottom: -25px;
+        border-radius: 4px;
+        opacity: 0.90;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--color-text-alt);
+        text-shadow: 2px 2px black;
     }
 }
 
