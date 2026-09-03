@@ -132,12 +132,15 @@ h1{
     font-size: 2.2em;
     color: var(--color-text-alt);
     text-align: center;
+    font-family: "Vampiro One", system-ui;
+    padding: 8px 0;
 }
 h2{
     font-size: 1.5em;
     color: var(--color-text-alt);
     text-align: center;
     padding: 8px;
+    font-family: "Vampiro One", system-ui;
 }
 h3{
     font-size: 1.2em;
@@ -195,6 +198,7 @@ h3{
 
 main{
     background-color: var(--color-background-alt);
+    font-family:"Space Mono", monospace;;
 }
 .flex{
     display: flex;
